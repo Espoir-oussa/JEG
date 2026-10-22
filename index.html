@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#2c0157">
+<title>Ton ticket — Journée des Étudiants Géographes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400;1,700&family=Rosario:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="preload" href="Betterlett.otf" as="font" type="font/otf" crossorigin>
+<style>
+  @font-face { font-family: "Betterlett"; src: url("Betterlett.otf") format("opentype"); font-display: swap; }
+  :root { --nuit: #2c0157; --lilas: #d287fc; --orange: #ec9b07; --blanc: #ffffff; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    font-family: "Poppins", system-ui, sans-serif; color: var(--blanc); font-size: 14px;
+    min-height: 100vh; min-height: 100dvh;
+    background:
+      radial-gradient(ellipse 80% 45% at 50% 55%, #6a14b8 0%, transparent 70%),
+      radial-gradient(ellipse 70% 40% at 100% 0%, rgba(210,135,252,.35) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 35% at 0% 100%, rgba(210,135,252,.25) 0%, transparent 70%),
+      var(--nuit);
+    background-attachment: fixed;
+    display: flex; justify-content: center; padding: 40px 16px 32px;
+  }
+  main { width: 100%; max-width: 480px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+
+  .titre { margin-top: 8px; animation: entree .6s .1s ease both; }
+  .titre .j { font-family: "Betterlett", cursive; font-size: 72px; line-height: 1.2; color: var(--lilas); }
+  .titre .reste { font-family: Candara, "Rosario", sans-serif; font-size: min(6vw, 44px); white-space: nowrap; font-weight: 700; font-style: italic; line-height: 1.15; margin-top: 8px; text-transform: uppercase; letter-spacing: .5px; }
+
+  .carte {
+    margin-top: 36px; width: 100%; padding: 32px 22px 34px;
+    border: 3px solid var(--lilas); border-radius: 28px; background: rgba(44,1,87,.6);
+    animation: entree .6s .2s ease both;
+  }
+  .cadenas {
+    width: 64px; height: 64px; margin: 0 auto 18px; border-radius: 50%; background: var(--orange);
+    display: flex; align-items: center; justify-content: center;
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  .acces { font-size: 13px; font-weight: 600; letter-spacing: 5px; color: var(--lilas); margin-bottom: 12px; }
+  .message { font-family: Candara, "Rosario", sans-serif; font-size: 28px; font-weight: 700; line-height: 1.25; margin: 0; text-wrap: balance; }
+  .message em { display: block; font-style: normal; color: var(--orange); }
+
+  .infos { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; animation: entree .6s .3s ease both; }
+  .infos div { font-size: 16px; font-weight: 700; padding: 8px 16px; display: flex; align-items: center; gap: 6px; }
+  .infos .date { background: var(--lilas); color: var(--nuit); }
+  .infos .lieu { background: var(--blanc); color: var(--nuit); }
+
+  .tel { margin-top: 28px; font-size: 14px; font-style: italic; line-height: 1.6; animation: entree .6s .4s ease both; }
+  .tel a { color: var(--blanc); font-weight: 700; text-decoration: none; white-space: nowrap; }
+
+  @keyframes entree { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(236,155,7,.55); } 50% { box-shadow: 0 0 0 14px rgba(236,155,7,0); } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="titre">
+    <div class="j">Journée</div>
+    <div class="reste">des Étudiants Géographes</div>
+  </div>
+
+  <section class="carte">
+    <div class="cadenas">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 0 2-2h14a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4z"/><path d="M14 6v12" stroke-dasharray="2 2"/></svg>
+    </div>
+    <div class="acces">TON TICKET</div>
+    <h1 class="message">Présente ce ticket <em>le jour de l'embarquement</em></h1>
+  </section>
+
+  <div class="infos">
+    <div class="date">SAMEDI 05 DÉC. 2026</div>
+    <div class="lieu">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+      GADOMÉ
+    </div>
+  </div>
+
+  <p class="tel">Pour tout besoin de ticket, contacte :<br>
+    <a href="tel:+2290154221102">+229 0154221102</a> / <a href="tel:+2290143508059">0143508059</a>
+  </p>
+</main>
+</body>
+</html>
